@@ -1,0 +1,125 @@
+.contacts {
+  background-color: $bgc-secondary-color;
+}
+.contacts__container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contacts__list {
+}
+.contacts__card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 220px;
+  background: $white-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.contacts__card:last-child {
+  margin-bottom: 0%;
+}
+.card__title {
+  font-weight: 500;
+  font-size: $font-size-card;
+  line-height: $line-height-card;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $white-color;
+  margin-top: 0%;
+  margin-bottom: 25px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  min-width: 80px;
+  height: 16px;
+}
+.card__thumb {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.card__subtitle {
+  margin-top: 0%;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: $font-size-card;
+  line-height: $line-height-card;
+  color: $title-color;
+}
+.card__text {
+  margin: 0%;
+  font-weight: 500;
+  font-size: $font-size-card;
+  line-height: $line-height-text-card;
+}
+.card__time {
+  font-weight: 500;
+  font-size: $font-size-card;
+  line-height: $line-height-card;
+  color: $pink-color;
+  margin: 0%;
+}
+.card__contacts {
+}
+.contacts__item {
+  font-weight: 500;
+  font-size: $font-size-card;
+  line-height: $line-height-text-card;
+  margin-top: 0%;
+  margin-bottom: 5px;
+}
+.contacts__item:last-child {
+  margin-bottom: 0%;
+}
+.contacts__button-list {
+  display: flex;
+  margin-top: 54px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button-list__button-primary {
+  min-width: 161px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: $font-size-nav-and-text;
+  line-height: $line-height-nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white-color;
+  background: $button-contacts-color;
+  border-radius: 22px;
+  margin-bottom: 10px;
+}
+.button-list__icon {
+  fill: currentColor;
+  width: 8px;
+  height: 8px;
+  margin-left: 11px;
+}
+.button-list__button-secondary {
+  min-width: 161px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: $font-size-nav-and-text;
+  line-height: $line-height-nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $button-contacts-color;
+  background: $white-color;
+  border-radius: 22px;
+}
