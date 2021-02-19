@@ -370,6 +370,7 @@ li {
   .contacts {
     background-image: url(../images/contacts/sectionbg2.png);
     background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
