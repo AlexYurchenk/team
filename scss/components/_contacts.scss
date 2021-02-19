@@ -1,3 +1,12 @@
+.a {
+  width: 1000px;
+  height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  background-color: tomato;
+}
+
 .contacts {
   background-color: $bgc-secondary-color;
   @media screen and (min-width: 1280px) {
@@ -19,7 +28,10 @@
   }
 }
 .contacts__list {
+  position: relative;
+  top: -84px;
   @media screen and (min-width: 768px) {
+    top: 0%;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -29,6 +41,7 @@
     }
   }
 }
+
 .contacts__card {
   margin-left: auto;
   margin-right: auto;
@@ -42,6 +55,7 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   @media screen and (min-width: 768px) {
+    margin-top: -100px;
     margin-bottom: 0%;
     margin-right: 20px;
     max-width: 330px;
@@ -49,6 +63,7 @@
     padding-right: 30px;
   }
   @media screen and (min-width: 1280px) {
+    margin-top: 0%;
     margin-right: 30px;
     padding-left: 44px;
     padding-right: 44px;
