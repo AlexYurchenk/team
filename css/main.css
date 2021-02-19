@@ -1035,45 +1035,49 @@ li {
   }
 }
 
-.footer__contacts {
+.footer__text {
+  display: inline-block;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83em;
-  color: #d41443;
+  color: #000000;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .footer__contacts {
+  .footer__text {
     line-height: 1.857em;
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .footer__contacts {
+  .footer__text {
     font-size: 16px;
     line-height: 1.875em;
     letter-spacing: 0.02em;
   }
 }
 
-.footer__text {
+.footer__contacts {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83em;
-  color: #000000;
-  margin: 0%;
+  color: #d41443;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
-  .footer__text {
+  .footer__contacts {
     line-height: 1.857em;
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .footer__text {
+  .footer__contacts {
     font-size: 16px;
     line-height: 1.875em;
     letter-spacing: 0.02em;
