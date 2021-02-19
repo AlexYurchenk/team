@@ -506,16 +506,6 @@ li {
   position: relative;
 }
 
-.card__thumb::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #e1e1e1;
-  position: absolute;
-  bottom: -25px;
-}
-
 @media screen and (min-width: 768px) {
   .card__thumb {
     margin-bottom: 60px;
@@ -543,6 +533,28 @@ li {
 @media screen and (min-width: 1280px) {
   .card__list {
     margin-bottom: 64px;
+  }
+}
+
+.card__thumb::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  bottom: -25px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__thumb::after {
+    bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__thumb::after {
+    bottom: -32px;
   }
 }
 
