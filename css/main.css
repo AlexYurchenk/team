@@ -819,10 +819,8 @@ li {
 }
 
 .footer {
-  position: relative;
-  top: -84px;
   background-color: #fff5f6;
-  padding-top: 113px;
+  padding-top: 29px;
 }
 
 @media screen and (min-width: 768px) {
