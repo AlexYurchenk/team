@@ -363,11 +363,8 @@ li {
 }
 
 .a {
-  width: 1000px;
+  min-width: 2000px;
   height: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
   background-color: tomato;
 }
 
@@ -703,6 +700,8 @@ li {
 }
 
 .contacts__button-list {
+  position: relative;
+  top: -84px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,6 +720,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .contacts__button-list {
+    top: 0%;
     margin-right: 15px;
     margin-top: 0%;
     -webkit-box-orient: horizontal;
@@ -819,12 +819,15 @@ li {
 }
 
 .footer {
+  position: relative;
+  top: -84px;
   background-color: #fff5f6;
   padding-top: 113px;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
+    top: 0%;
     padding-top: 158px;
   }
 }
