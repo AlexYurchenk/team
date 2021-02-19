@@ -493,36 +493,70 @@ li {
 }
 
 .card__thumb {
-  margin-bottom: 25px;
   position: relative;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.card__thumb::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  bottom: -25px;
 }
 
 @media screen and (min-width: 768px) {
   .card__thumb {
-    margin-bottom: 32px;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .card__thumb {
-    margin-bottom: 32px;
+    margin-bottom: 60px;
   }
 }
 
 .card__list {
+  position: relative;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .card__list {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .card__list {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
+  }
+}
+
+.card__list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  bottom: -25px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__list::after {
+    bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__list::after {
+    bottom: -32px;
   }
 }
 
@@ -561,24 +595,6 @@ li {
   }
 }
 
-.card__subthumb {
-  padding-bottom: 25px;
-  width: 100%;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-@media screen and (min-width: 768px) {
-  .card__subthumb {
-    padding-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .card__subthumb {
-    padding-bottom: 32px;
-  }
-}
-
 .card__text {
   margin: 0%;
   font-weight: 500;
@@ -601,6 +617,7 @@ li {
 }
 
 .card__time {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83em;
