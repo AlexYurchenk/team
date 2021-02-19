@@ -1,9 +1,6 @@
 .a {
-  width: 1000px;
+  min-width: 2000px;
   height: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
   background-color: tomato;
 }
 
@@ -238,12 +235,15 @@
   margin-bottom: 0%;
 }
 .contacts__button-list {
+  position: relative;
+  top: -84px;
   display: flex;
   margin-top: 54px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
+    top: 0%;
     margin-right: 15px;
     margin-top: 0%;
     flex-direction: row;
