@@ -362,6 +362,15 @@ li {
   margin: -1px;
 }
 
+.a {
+  width: 1000px;
+  height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  background-color: tomato;
+}
+
 .contacts {
   background-color: #fff5f6;
 }
@@ -392,8 +401,14 @@ li {
   }
 }
 
+.contacts__list {
+  position: relative;
+  top: -84px;
+}
+
 @media screen and (min-width: 768px) {
   .contacts__list {
+    top: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -427,6 +442,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .contacts__card {
+    margin-top: -100px;
     margin-bottom: 0%;
     margin-right: 20px;
     max-width: 330px;
@@ -437,6 +453,7 @@ li {
 
 @media screen and (min-width: 1280px) {
   .contacts__card {
+    margin-top: 0%;
     margin-right: 30px;
     padding-left: 44px;
     padding-right: 44px;
