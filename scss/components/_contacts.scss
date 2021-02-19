@@ -1,5 +1,9 @@
 .contacts {
   background-color: $bgc-secondary-color;
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/contacts/sectionbg2.png);
+    background-size: contain;
+  }
 }
 .contacts__container {
   max-width: 280px;
