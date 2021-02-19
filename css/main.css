@@ -422,12 +422,16 @@ li {
     margin-bottom: 0%;
     margin-right: 20px;
     max-width: 330px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts__card {
     margin-right: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
 
@@ -493,6 +497,12 @@ li {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .card__thumb {
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .card__thumb {
     margin-bottom: 32px;
@@ -507,6 +517,12 @@ li {
 @media screen and (min-width: 768px) {
   .card__list {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__list {
+    margin-bottom: 32px;
   }
 }
 
@@ -540,6 +556,8 @@ li {
 @media screen and (min-width: 1280px) {
   .card__subtitle {
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.875em;
   }
 }
 
@@ -575,6 +593,13 @@ li {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .card__text {
+    font-size: 16px;
+    line-height: 1.81em;
+  }
+}
+
 .card__time {
   font-weight: 500;
   font-size: 12px;
@@ -590,6 +615,13 @@ li {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .card__time {
+    font-size: 16px;
+    line-height: 1.875em;
+  }
+}
+
 .contacts__item {
   font-weight: 500;
   font-size: 12px;
@@ -602,6 +634,13 @@ li {
   .contacts__item {
     font-size: 14px;
     line-height: 1.857em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__item {
+    font-size: 16px;
+    line-height: 1.81em;
   }
 }
 
@@ -678,6 +717,18 @@ li {
   width: 8px;
   height: 8px;
   margin-left: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-list__icon {
+    margin-left: 13px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button-list__icon {
+    margin-left: 14px;
+  }
 }
 
 .button-list__button-secondary {
@@ -820,7 +871,7 @@ li {
 
 @media screen and (min-width: 1280px) {
   .footer__thumb {
-    min-width: 474px;
+    min-width: 477px;
   }
 }
 
