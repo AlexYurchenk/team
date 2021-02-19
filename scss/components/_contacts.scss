@@ -2,11 +2,26 @@
   background-color: $bgc-secondary-color;
 }
 .contacts__container {
-  width: 280px;
+  max-width: 280px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1050px;
+  }
 }
 .contacts__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 81px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 86px;
+    }
+  }
 }
 .contacts__card {
   margin-left: auto;
@@ -16,13 +31,24 @@
   padding-bottom: 43px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 220px;
+  max-width: 220px;
   background: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0%;
+    margin-right: 20px;
+    max-width: 330px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 30px;
+  }
 }
 .contacts__card:last-child {
   margin-bottom: 0%;
+  @media screen and (min-width: 768px) {
+    margin-right: 0%;
+  }
 }
 .card__title {
   font-weight: 500;
@@ -42,12 +68,41 @@
   border-radius: 4px;
   min-width: 80px;
   height: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 30px;
+    min-height: 28px;
+    min-width: 73px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
+}
+.card__title--green {
+  background: #c2e297;
 }
 .card__thumb {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   position: relative;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
 }
-
+.card__list {
+  width: 100%;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+.list__item:not(:last-child) {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
 .card__subtitle {
   margin-top: 0%;
   margin-bottom: 10px;
@@ -55,12 +110,35 @@
   font-size: $font-size-card;
   line-height: $line-height-card;
   color: $title-color;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-header-button;
+    line-height: $line-height-footer;
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 10px;
+  }
+}
+.card__subthumb {
+  padding-bottom: 25px;
+  width: 100%;
+  border-bottom: 1px solid $comma-color;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 32px;
+  }
 }
 .card__text {
   margin: 0%;
   font-weight: 500;
   font-size: $font-size-card;
   line-height: $line-height-text-card;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-header-button;
+    line-height: 1.64em;
+  }
 }
 .card__time {
   font-weight: 500;
@@ -68,6 +146,10 @@
   line-height: $line-height-card;
   color: $pink-color;
   margin: 0%;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-header-button;
+    line-height: $line-height-footer;
+  }
 }
 .card__contacts {
 }
@@ -77,6 +159,10 @@
   line-height: $line-height-text-card;
   margin-top: 0%;
   margin-bottom: 5px;
+  @media screen and (min-width: 768px) {
+    font-size: $font-size-header-button;
+    line-height: $line-height-footer;
+  }
 }
 .contacts__item:last-child {
   margin-bottom: 0%;
@@ -87,7 +173,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    margin-top: 0%;
+    flex-direction: row;
+  }
 }
+
 .button-list__button-primary {
   min-width: 161px;
   padding-top: 12px;
@@ -102,9 +194,17 @@
   background: $button-contacts-color;
   border-radius: 22px;
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    margin-bottom: 0%;
+    min-width: 180px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 200px;
+  }
 }
 .button-list__icon {
-  fill: currentColor;
+  stroke: currentColor;
   width: 8px;
   height: 8px;
   margin-left: 11px;
@@ -122,4 +222,10 @@
   color: $button-contacts-color;
   background: $white-color;
   border-radius: 22px;
+  @media screen and (min-width: 768px) {
+    min-width: 180px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 200px;
+  }
 }
