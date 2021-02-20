@@ -821,10 +821,8 @@ li {
 }
 
 .footer {
-  position: relative;
-  top: -84px;
   background-color: #fff5f6;
-  padding-top: 113px;
+  padding-top: 29px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1191,6 +1189,7 @@ li {
     line-height: 1.857em;
   }
 }
+<<<<<<< HEAD
 
 .backdrop {
   position: fixed;
@@ -1226,3 +1225,6 @@ li {
   margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
+=======
+/*# sourceMappingURL=main.css.map */
+>>>>>>> 600bd9f9fb33ed1c929484dbf6e4a1086100e4e4
