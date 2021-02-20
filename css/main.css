@@ -1189,7 +1189,6 @@ li {
     line-height: 1.857em;
   }
 }
-<<<<<<< HEAD
 
 .backdrop {
   position: fixed;
@@ -1224,7 +1223,20 @@ li {
   margin-left: auto;
   margin-top: 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .button__modal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button__modal {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*# sourceMappingURL=main.css.map */
-=======
-/*# sourceMappingURL=main.css.map */
->>>>>>> 600bd9f9fb33ed1c929484dbf6e4a1086100e4e4
