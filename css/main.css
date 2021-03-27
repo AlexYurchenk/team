@@ -366,12 +366,6 @@ li {
   margin: -1px;
 }
 
-.a {
-  max-width: 2000px;
-  height: 1000px;
-  background-color: tomato;
-}
-
 .contacts {
   background-color: #fff5f6;
 }
@@ -1196,6 +1190,20 @@ li {
   }
 }
 
+.a {
+  width: 60px;
+  height: 60px;
+  background: url("./images/caret-arrow-up.png");
+  height: 60px;
+  width: 60px;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1218,10 +1226,32 @@ li {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   min-height: 300px;
-  min-width: 400px;
+  min-width: 220px;
   padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 400px;
+  }
+}
+
+.modal__tab {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__tab {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal__mob {
+    display: none;
+  }
 }
 
 .button__modal {
@@ -1245,5 +1275,17 @@ li {
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url("icon_top.png") no-repeat;
 }
 /*# sourceMappingURL=main.css.map */

@@ -236,3 +236,16 @@
     line-height: $line-height-footer;
   }
 }
+.a{
+  width: 60px;
+  height: 60px;
+  background: url("./images/caret-arrow-up.png");
+  height: 60px;
+  width: 60px;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
